@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_white_rect_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="@dimen/dp_22"
+                android:text="微信收款码"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <com.personal.baseutils.widget.GridViewForScrollView
+                android:id="@+id/m_wechat_receive_payment_gv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:horizontalSpacing="@dimen/dp_10"
+                android:listSelector="@color/color_transparent"
+                android:numColumns="3"
+                android:verticalSpacing="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="@dimen/dp_21"
+                android:text="请上传您的微信收款码"
+                android:textColor="@color/text_third_999999"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m_commit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/dp_30"
+            android:layout_marginBottom="54dp"
+            android:background="@drawable/shape_orange_rect_22"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="确认保存"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

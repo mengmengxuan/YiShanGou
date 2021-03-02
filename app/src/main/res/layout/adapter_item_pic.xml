@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="6dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@mipmap/image_template"
+        android:id="@+id/m_image_iv"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+    <TextView
+        android:id="@+id/m_name_tv"
+        android:text="现切菠萝"
+        android:textSize="13dp"
+        android:textColor="@color/color_666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

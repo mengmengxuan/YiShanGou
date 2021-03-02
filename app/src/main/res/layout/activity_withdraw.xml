@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_white_rect_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/m_withdraw_desc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="提现金额"
+                    android:textColor="@color/text_black_333333"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/m_account_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/m_withdraw_desc_tv"
+                    android:layout_alignLeft="@id/m_withdraw_desc_tv">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="@color/text_black_333333"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/m_amount_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:text="0"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/m_account_ll"
+                    android:layout_alignLeft="@id/m_withdraw_desc_tv"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@color/color_F8F8F8" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/shape_white_rect_10">
+
+                <TextView
+                    android:id="@+id/m_withdraw_method_desc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="提现方式"
+                    android:textColor="@color/color_333333"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/m_alipay_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/m_withdraw_method_desc_tv"
+                    android:layout_alignLeft="@id/m_withdraw_method_desc_tv"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/m_alipay_iv"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@mipmap/icon_alipay" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_toRightOf="@id/m_alipay_iv"
+                        android:text="支付宝"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+
+                    <CheckBox
+                        android:checked="true"
+                        android:id="@+id/m_is_alipay_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:button="@drawable/selector_protocol_cb" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/m_wechat_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/m_alipay_rl"
+                    android:layout_alignLeft="@id/m_withdraw_method_desc_tv"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/m_wechat_iv"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@mipmap/icon_wechat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_toRightOf="@id/m_wechat_iv"
+                        android:text="微信"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+
+                    <CheckBox
+                        android:id="@+id/m_is_wechat_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:button="@drawable/selector_protocol_cb" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/m_bank_card_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/m_wechat_rl"
+                    android:layout_alignLeft="@id/m_withdraw_method_desc_tv"
+                    android:layout_marginBottom="7dp"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/m_bank_card_iv"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@mipmap/icon_card" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_toRightOf="@id/m_bank_card_iv"
+                        android:text="银行卡"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+
+                    <CheckBox
+                        android:id="@+id/m_is_bank_card_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:button="@drawable/selector_protocol_cb" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m_commit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/dp_30"
+            android:layout_marginBottom="54dp"
+            android:background="@drawable/shape_orange_rect_22"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="确认提现"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>

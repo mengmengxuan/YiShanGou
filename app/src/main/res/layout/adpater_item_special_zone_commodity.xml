@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/shape_white_rect_10">
+
+    <ImageView
+        android:id="@+id/m_goods_pic_iv"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/m_goods_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_26"
+        android:layout_toRightOf="@id/m_goods_pic_iv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/m_goods_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称"
+            android:textColor="@color/text_black_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/m_monthly_sale_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="月销0"
+            android:textColor="@color/text_third_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/m_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="￥0.0"
+            android:textColor="@color/color_F14C14"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/m_immediately_buy_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/m_goods_pic_iv"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/shape_orange_rect_gradient_12"
+        android:paddingHorizontal="@dimen/dp_21"
+        android:paddingVertical="6dp"
+        android:paddingRight="@dimen/dp_22"
+        android:text="立即抢购"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

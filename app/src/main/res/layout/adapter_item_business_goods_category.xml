@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/m_category_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingVertical="15dp"
+    android:text="分类"
+    android:textColor="@color/color_7B7C80"
+    android:textSize="14sp">
+
+
+</TextView>

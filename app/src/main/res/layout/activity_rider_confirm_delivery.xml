@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/m_address_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape_white_rect_10"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25">
+
+                <TextView
+                    android:id="@+id/m_deliver_desc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_blue_circle"
+                    android:gravity="center"
+                    android:text="发"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/m_delivery_info_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/m_deliver_desc_tv">
+
+                    <TextView
+                        android:id="@+id/m_delivery_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发货人姓名"
+                        android:textColor="@color/text_black_333333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/m_delivery_phone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9dp"
+                        android:layout_toRightOf="@id/m_delivery_name_tv"
+                        android:text="13900001111"
+                        android:textColor="@color/color_03A4FA"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/m_call_delivery_phone_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9dp"
+                        android:layout_toRightOf="@id/m_delivery_phone_tv"
+                        android:src="@mipmap/icon_call_phone_blue" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/m_delivery_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/m_delivery_info_rl"
+                    android:layout_alignLeft="@id/m_delivery_info_rl"
+                    android:layout_marginTop="8dp"
+                    android:text="发货人地址"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/m_delivery_address_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_28"
+                    android:src="@mipmap/icon_address_blue" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/m_delivery_address_tv"
+                    android:layout_alignLeft="@id/m_delivery_info_rl"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_E5E5E5" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_22"
+                android:layout_marginBottom="@dimen/dp_23">
+
+                <TextView
+                    android:id="@+id/m_receive_desc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_green_circle"
+                    android:gravity="center"
+                    android:text="收"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/m_receive_info_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/m_receive_desc_tv">
+
+                    <TextView
+                        android:id="@+id/m_receive_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收货人姓名"
+                        android:textColor="@color/text_black_333333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/m_receive_phone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9dp"
+                        android:layout_toRightOf="@id/m_receive_name_tv"
+                        android:text="13900001111"
+                        android:textColor="@color/color_03A4FA"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/m_call_receive_phone_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9dp"
+                        android:layout_toRightOf="@id/m_receive_phone_tv"
+                        android:src="@mipmap/icon_call_phone_blue" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/m_receive_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/m_receive_info_rl"
+                    android:layout_alignLeft="@id/m_receive_info_rl"
+                    android:layout_marginTop="8dp"
+
+                    android:text="发货人地址"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/m_receive_address_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_28"
+                    android:src="@mipmap/icon_address_blue" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/m_address_ll"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_white_rect_10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/m_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_28"
+                android:text="￥0.0"
+                android:textColor="@color/color_F36C17"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="本次收款"
+                android:textColor="@color/color_333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/m_total_distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/dp_22"
+                android:text="总行程0.0km"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m_commit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/dp_30"
+            android:layout_marginBottom="42dp"
+            android:background="@drawable/shape_orange_rect_22"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</LinearLayout>

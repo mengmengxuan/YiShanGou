@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/color_F36C17"
+        android:id="@+id/m_merchant_info_rl"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="@dimen/dp_25">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/m_rider_logo_iv"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_marginVertical="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/m_rider_logo_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/m_rider_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名称"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/m_rider_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="13900001111"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/m_merchant_info_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="-12dp"
+        android:background="@drawable/shape_white_rect_10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/m_my_wallet_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/m_my_wallet_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="13dp"
+                android:src="@mipmap/icon_rider_wallet" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/m_my_wallet_iv"
+                android:text="我的钱包"
+                android:textColor="@color/color_333333"
+                android:textSize="13sp" />
+
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="11dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:src="@mipmap/icon_arrow_black_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/m_receive_order_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/m_goods_manager_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="19dp"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/icon_rider_order" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/m_goods_manager_iv"
+                android:text="配送订单"
+                android:textColor="@color/color_333333"
+                android:textSize="13sp" />
+
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="11dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:src="@mipmap/icon_arrow_black_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/m_person_data_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/m_busy_time_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="19dp"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/icon_rider_mine" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/m_busy_time_iv"
+                android:text="个人信息"
+                android:textColor="@color/color_333333"
+                android:textSize="13sp" />
+
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="11dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18dp"
+                android:src="@mipmap/icon_arrow_black_right" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/m_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/m_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/m_back_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="12dp"
+            android:src="@mipmap/icon_arrow_black_left" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/m_share_reward_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="477dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="38.5dp"
+        android:layout_marginRight="25.5dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/m_share_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/dp_80"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/shape_white_rect_16"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:text="分享到微信"
+        android:textColor="@color/color_e84515" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_95"
+        android:layout_height="@dimen/dp_156"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_213"
+        android:src="@mipmap/bg_dance_girl" />
+
+    <LinearLayout
+        android:id="@+id/m_share_wechat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_300"
+        android:layout_above="@id/m_share_tv"
+        android:layout_marginLeft="@dimen/dp_103"
+        android:layout_marginRight="@dimen/dp_95"
+        android:layout_marginBottom="@dimen/dp_46"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="分享奖励"
+            android:textColor="@color/color_e84515"
+            android:textSize="17sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/m_share_desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="    通过邀请码邀请您的好友注册消费，您即可获得丰厚奖励！如，您是A，邀请B注册消费赚佣金，A获得B消费流水额2.88%的奖励，B邀请C，B获得C消费流水额2.88%的奖励，而A获得C消费流水额0.88%的奖励，一直如此类推，奖励不上顶，消费时时有，早分享，早赚钱！"
+                android:textColor="@color/text_black_333333"
+                android:textSize="12sp" />
+        </ScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="早分享，早赚钱"
+            android:textColor="@color/color_e84515"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/m_qr_code_iv"
+            android:layout_width="@dimen/dp_88"
+            android:layout_height="@dimen/dp_88"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="长按保存图片"
+            android:textColor="@color/text_black_333333"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

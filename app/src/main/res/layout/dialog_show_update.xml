@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/m_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/m_tip_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_28"
+            android:background="@drawable/shape_white_rect_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/m_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="发现新版本"
+                android:textColor="@color/text_black_333333"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/m_desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_18"
+                android:layout_marginRight="@dimen/dp_30"
+                android:gravity="left"
+                android:lineSpacingExtra="@dimen/dp_10"
+                android:text="提示：版本更新"
+                android:textColor="@color/text_third_999999"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/m_upgrade_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginBottom="@dimen/dp_25"
+                android:gravity="center"
+                android:text="立即更新"
+                android:textColor="@color/text_black_333333"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/m_cancle_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/m_tip_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@mipmap/icon_close" />
+    </RelativeLayout>
+
+</RelativeLayout>

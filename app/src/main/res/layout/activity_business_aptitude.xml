@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:background="@color/color_F36C17"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/common_title"/>
+
+        <LinearLayout
+            android:background="@drawable/shape_white_rect_10"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="19dp"
+                android:text="商家资质信息公示"
+                android:textColor="@color/color_161616"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/m_merchant_licence_iv"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="214dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

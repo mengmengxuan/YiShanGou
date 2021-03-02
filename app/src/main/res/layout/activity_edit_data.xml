@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_white_rect_10"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="16dp">
+
+            <RelativeLayout
+                android:id="@+id/m_logo_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/m_logo_iv"
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_defult_head" />
+
+                <TextView
+                    android:id="@+id/m_change_head_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:drawableRight="@mipmap/icon_right"
+                    android:drawablePadding="8dp"
+                    android:gravity="right"
+                    android:paddingVertical="31dp"
+                    android:text="点击更换"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/color_EEEEEE" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/m_nick_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="昵称"
+                    android:textColor="@color/color_111111"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/m_nick_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/m_nick_name_tv"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入昵称"
+                    android:paddingVertical="20dp"
+                    android:text="瞌睡与梦想"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/color_EEEEEE" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/m_phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手机号"
+                    android:textColor="@color/color_111111"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/m_phone_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/m_phone_tv"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入手机号"
+                    android:maxLength="11"
+                    android:paddingVertical="20dp"
+                    android:text="15156569475"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m_sure_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:paddingHorizontal="127dp"
+            android:paddingVertical="15dp"
+            android:text="确认修改"
+            android:textColor="@color/white"
+            android:textSize="15.5dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

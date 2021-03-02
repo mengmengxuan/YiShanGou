@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:id="@+id/m_share_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_orange">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.yunlankeji.yishangou.view.RadiusImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="37dp"
+                android:src="@mipmap/icon_logo"
+                app:radius="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="44dp"
+                android:gravity="center"
+                android:text="购买、商城、跑腿一站式生活服务，下载立即加入！"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="23dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/shape_white_rect_15"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginTop="45dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/m_android_code_iv"
+                        android:layout_width="106dp"
+                        android:layout_height="106dp"
+                        android:src="@mipmap/icon_logo" />
+
+                    <TextView
+                        android:id="@+id/m_android_download_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/btn_android_download"
+                        android:paddingHorizontal="25dp"
+                        android:paddingVertical="10dp"
+                        android:text="安卓下载"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/m_ios_code_iv"
+                        android:layout_width="106dp"
+                        android:layout_height="106dp"
+                        android:src="@mipmap/icon_logo" />
+
+                    <TextView
+                        android:id="@+id/m_ios_download_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/btn_ios_download"
+                        android:paddingHorizontal="25dp"
+                        android:paddingVertical="10dp"
+                        android:text="iOS下载"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/m_share_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="33dp"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/btn_share"
+                android:paddingHorizontal="85dp"
+                android:paddingVertical="12dp"
+                android:text="分享到微信"
+                android:textColor="@color/white"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

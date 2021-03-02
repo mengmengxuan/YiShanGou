@@ -1,0 +1,4 @@
+include ':citypicker'
+include ':baseutils'
+include ':app'
+rootProject.name = "YiShanGou"

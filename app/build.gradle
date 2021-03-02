@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('../aha.jks')
+            storePassword '123456'
+            keyAlias 'ahakey'
+            keyPassword '123456'
+        }
+        debug {
+            storeFile file('../aha.jks')
+            storePassword '123456'
+            keyAlias 'ahakey'
+            keyPassword '123456'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "com.yunlankeji.yishangou"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 5
+        versionName "1.0.5"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation project(path: ':baseutils')
+    implementation project(path: ':citypicker')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation files('libs\\alipaySdk-15.7.9-20200727142846.aar')
+
+    // 网络请求依赖
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    // 轮播图控件
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+
+    // 下拉刷新和上拉加载更多
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.2'
+
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    //图片选择
+    implementation 'com.github.donkingliang:ImageSelector:2.2.0'
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //知乎图片选择框架
+    implementation 'com.zhihu.android:matisse:0.5.3-beta3'
+    //luban压缩
+    implementation 'top.zibin:Luban:1.1.8'
+
+    //二维码，扫一扫
+    implementation 'cn.bingoogolapple:bga-qrcode-zxing:1.3.6'
+
+    //富文本
+    implementation 'com.zzhoujay.richtext:richtext:2.5.1'
+
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
+
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.alibaba:fastjson:1.2.62'
+
+    implementation 'com.github.hackware1993:MagicIndicator:1.7.0'
+
+    //MagicIndicator
+//    implementation 'com.github.hackware1993:MagicIndicator:1.6.0' // for support lib
+    implementation 'com.github.hackware1993:MagicIndicator:1.7.0' // for androidx
+
+    //工具类，用于退出登录
+    api 'com.blankj:utilcode:1.20.3'
+
+    //3D地图so及jar
+    implementation 'com.amap.api:3dmap:7.6.0'
+    //定位功能
+    implementation 'com.amap.api:location:5.2.0'
+    //搜索功能
+    implementation 'com.amap.api:search:7.6.0'
+
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+
+
+}

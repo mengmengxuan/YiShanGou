@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunlankeji.yishangou">
+
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <!-- 应用更新 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/DefaultCityPickerTheme" />
+
+        <activity android:name=".activity.login.ProtocolActivity" />
+        <activity android:name=".activity.login.LoginActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".activity.mine.EditDataActivity" />
+        <activity android:name=".activity.mine.AboutUsActivity" />
+        <activity android:name=".activity.mine.ReceiveAddressActivity" />
+        <activity android:name=".activity.mine.EditAddressActivity" />
+        <activity android:name=".activity.mine.ShareActivity" />
+        <activity android:name=".activity.mine.EasyPayActivity" />
+        <activity android:name=".activity.mine.MyInvitationActivity" />
+        <activity android:name=".activity.home.PushOrderActivity" />
+        <activity android:name=".activity.home.PayActivity" />
+        <activity android:name=".activity.home.FoodDetailActivity" />
+        <activity android:name=".activity.mine.OthersInvitationActivity" />
+        <activity android:name=".activity.mine.MyWalletActivity" />
+        <activity android:name=".activity.mine.WithdrawActivity" />
+        <activity android:name=".activity.mine.AlipayWithdrawActivity" />
+        <activity android:name=".activity.mine.BankCardWithdrawActivity" />
+        <activity android:name=".activity.mine.WechatWithdrawActivity" />
+        <activity android:name=".activity.home.SearchActivity" />
+        <activity android:name=".activity.order.OrderDetailActivity" />
+        <activity android:name=".activity.home.MoreCategoryActivity" />
+        <activity android:name=".activity.home.StoreListActivity" />
+        <activity android:name=".activity.home.BannerDetailActivity" />
+        <activity android:name=".activity.home.CategorizeActivity" />
+        <activity android:name=".activity.home.BusinessAptitudeActivity" />
+        <activity android:name=".activity.home.BusinessInformationActivity" />
+        <activity android:name=".activity.home.StoreDetailActivity" />
+        <activity android:name=".activity.business.BusinessHostActivity" />
+        <activity android:name=".activity.mine.RiderSettleActivity" />
+        <activity android:name=".activity.business.BusinessOrderCenterActivity" />
+        <activity android:name=".activity.rider.RiderOrderActivity" />
+        <activity android:name=".activity.mine.ChooseAreaActivity" />
+        <activity android:name=".activity.business.WorkTimeActivity" />
+        <activity android:name=".activity.mine.GoodsManagerActivity" />
+        <activity android:name=".activity.business.BusinessEditInformationActivity" />
+        <activity android:name=".activity.business.EditWorkTimeActivity" />
+        <activity android:name=".activity.business.CreateBusyTimeActivity" />
+        <activity android:name=".activity.business.CreateGoodsActivity" />
+        <activity android:name=".activity.business.GoodsCategoryActivity" />
+        <activity android:name=".activity.business.VerifyResultActivity" />
+        <activity android:name=".activity.business.BusinessOrderDetailActivity" />
+        <activity android:name=".activity.runerrands.SendAddressActivity" />
+        <activity android:name=".activity.rider.RiderOrderCenterActivity" />
+        <activity android:name=".activity.rider.RiderRunErrandsOrderDetailActivity" />
+        <activity android:name=".activity.rider.RiderTakeawayOrderDetailActivity" />
+        <activity android:name=".activity.runerrands.RunErrandsSelectAddressActivity" />
+        <activity android:name=".activity.rider.RiderInformationActivity" />
+        <activity android:name=".activity.rider.RiderPickUpActivity" />
+        <activity android:name=".activity.rider.RiderConfirmOrderActivity" />
+        <activity android:name=".activity.rider.RiderInDeliveryActivity" />
+        <activity android:name=".activity.rider.RiderConfirmDelivery" />
+        <activity android:name=".activity.runerrands.WaitActivity" />
+        <activity android:name=".activity.runerrands.CheckOrderActivity" />
+        <activity android:name=".activity.runerrands.ComingActivity" />
+        <activity android:name=".activity.runerrands.RunErrandsSendedActivity" />
+        <activity android:name=".activity.home.ChooseCityActivity" />
+        <activity android:name=".activity.home.ShareRegisterActivity" />
+        <activity android:name=".activity.home.SpecialZoneActivity" />
+        <activity android:name=".activity.order.RunErrandsOrderDetailActivity" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <service android:name=".service.LocationService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.yunlankeji.yishangou.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="083d2a5bc6ed5532c1964565fe6d6c7c" />
+
+    </application>
+
+</manifest>

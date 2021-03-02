@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="radius" format="dimension" />
+        <attr name="left_top_radius" format="dimension" />
+        <attr name="right_top_radius" format="dimension" />
+        <attr name="right_bottom_radius" format="dimension" />
+        <attr name="left_bottom_radius" format="dimension" />
+    </declare-styleable>
+
+
+    <!--<declare-styleable name="NavigationTabStrip">-->
+        <!--<attr name="nts_color" format="color"/>-->
+        <!--<attr name="nts_size" format="dimension"/>-->
+        <!--<attr name="nts_weight" format="dimension"/>-->
+        <!--<attr name="nts_factor" format="float"/>-->
+        <!--<attr name="nts_titles" format="reference"/>-->
+        <!--<attr name="nts_bold" value="true"/>-->
+
+        <!--<attr name="nts_type" format="enum">-->
+            <!--<enum name="line" value="0"/>-->
+            <!--<enum name="point" value="1"/>-->
+        <!--</attr>-->
+        <!--<attr name="nts_gravity" format="enum">-->
+            <!--<enum name="bottom" value="0"/>-->
+            <!--<enum name="top" value="1"/>-->
+        <!--</attr>-->
+
+        <!--<attr name="nts_typeface" format="string"/>-->
+        <!--<attr name="nts_corners_radius" format="dimension"/>-->
+        <!--<attr name="nts_animation_duration" format="integer"/>-->
+
+        <!--<attr name="nts_inactive_color" format="color"/>-->
+        <!--<attr name="nts_active_color" format="color"/>-->
+
+    <!--</declare-styleable>-->
+
+    <!--<string-array name="titles">-->
+        <!--<item>热门</item>-->
+        <!--<item>分类</item>-->
+        <!--<item>分类一</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="record_titles">-->
+        <!--<item>消费记录</item>-->
+        <!--<item>消费记录</item>-->
+    <!--</string-array>-->
+
+
+</resources>

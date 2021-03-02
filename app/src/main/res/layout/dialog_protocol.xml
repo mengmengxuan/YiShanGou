@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="468dp"
+    android:background="@drawable/rect_part_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="隐私条款与协议"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="17dp"
+            android:background="#e6e6e6" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/msgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="10dp"
+                android:text="您在使用美团外卖服务前，应当仔细认真阅读本《美团外卖用户服务条款》(下称“本条款”，下载地址： http://portal-portm.meituan.com/waimaiagreement/protocol)中的全部规则、《美团点评平台用户服务协议》（以下简称“《美团点评平台用户服务协议》”）及美团外卖发布的其他服务条款、专项产品或服务规则或规范（包括但不限于《美团外卖代金券使用规则》、《美团外卖红包使用规则》、《美团外卖用户评价规则》以及其他在美团外卖平台不时发布的服务规则或规范等，以下合称“服务规则”）的内容（特别是其中以黑体字标示出的关于美团外卖及用户重大权益的规则，该等规则可能涉及相关方的责任免除或限制、法律适用与争议解决条款，请您重点阅读），确认对本条款、《美团点评平台用户服务协议》及各项服务规则均已知晓、理解并接受，并已同意将其作为确定双方权利义务的依据。如您使用美团点评账号访问美团外卖服务或以其他方式使用或接受美团外卖的任何服务，即视为您已阅读并与美团外卖达成协议，自愿接受本条款的所有内容的约束。所有服务规则视为本条款不可分割的一部分，与本条款具有同等法律效力。"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e6e6e6"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/m_protocol_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:button="@drawable/selector_protocol_cb"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingVertical="15dp"
+            android:paddingLeft="10dp"
+            android:text="勾选即代表同意"
+            android:textColor="@color/text_black_333333" />
+
+        <!--    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="勾选即代表同意"
+                android:textColor="@color/color_999999"
+                android:textSize="13dp" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_cancel"
+            android:clickable="true"
+            android:paddingHorizontal="41dp"
+            android:paddingVertical="10dp"
+            android:text="取消"
+            android:textColor="@color/color_666666"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/btn_sure"
+            android:clickable="true"
+            android:paddingHorizontal="41dp"
+            android:paddingVertical="10dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>

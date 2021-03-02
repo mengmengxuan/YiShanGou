@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp20">
+
+    <ImageView
+        android:id="@+id/m_category_logo_iv"
+        android:layout_width="@dimen/dp_53"
+        android:layout_height="@dimen/dp_53"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/m_category_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_category_logo_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="标题"
+        android:textColor="@color/text_black_333333"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

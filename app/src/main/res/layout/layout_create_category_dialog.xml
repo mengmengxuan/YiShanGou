@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_rect_10">
+
+    <TextView
+        android:id="@+id/m_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="15dp"
+        android:text="新增分类"
+        android:textColor="@color/color_111111"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/m_cancel_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/icon_cross_gray" />
+
+    <EditText
+        android:id="@+id/m_input_category_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_title_tv"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_fafafa_border_3"
+        android:hint="请输入需要添加的分类名称"
+        android:paddingHorizontal="7dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/color_999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/m_sure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_input_category_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/dp_46"
+        android:layout_marginTop="@dimen/dp_31"
+        android:layout_marginBottom="@dimen/dp_27"
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        android:paddingVertical="9dp"
+        android:text="确定添加"
+        android:textColor="@color/white"
+        android:textSize="15.5dp" />
+
+
+</RelativeLayout>

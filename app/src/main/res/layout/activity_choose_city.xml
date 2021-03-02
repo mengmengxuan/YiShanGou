@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/m_root_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/m_back_iv"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="12dp"
+                android:src="@mipmap/icon_arrow_black_left" />
+
+            <EditText
+                android:id="@+id/m_search_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/shape_gray_ebebeb_rect_16"
+                android:drawableLeft="@mipmap/icon_search"
+                android:drawablePadding="10dp"
+                android:hint="请搜索城市名"
+                android:paddingLeft="12dp"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cp_city_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/cp_overlay"
+            android:layout_width="?attr/cpOverlayWidth"
+            android:layout_height="?attr/cpOverlayHeight"
+            android:layout_centerInParent="true"
+            android:background="?attr/cpOverlayBackground"
+            android:gravity="center"
+            android:textColor="?attr/cpOverlayTextColor"
+            android:textSize="?attr/cpOverlayTextSize"
+            android:visibility="gone" />
+
+        <!--右侧字母导航-->
+        <com.zaaach.citypicker.view.SideIndexBar
+            android:id="@+id/cp_side_index_bar"
+            android:layout_width="@dimen/cp_index_bar_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginVertical="@dimen/dp20" />
+
+        <include layout="@layout/cp_empty_view" />
+    </RelativeLayout>
+</LinearLayout>

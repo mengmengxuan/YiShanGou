@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="430dp">
+
+    <RelativeLayout
+        android:id="@+id/m_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/m_shopping_car_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="购物车"
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/m_dialog_selected_goods_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/m_shopping_car_tv"
+            android:text="（共0件商品）"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/m_dialog_clear_shopping_car_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:drawableLeft="@mipmap/icon_delete_trash_can"
+            android:drawablePadding="10dp"
+            android:paddingVertical="10dp"
+            android:text="清空购物车"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/part_line_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/m_top_rl"
+        android:background="@color/part_line_f8f8f8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/m_dialog_selected_goods_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/part_line_bottom"
+        android:layout_below="@id/part_line_top"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/part_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/m_bottom_rl"
+        android:background="@color/part_line_f8f8f8" />
+
+    <RelativeLayout
+        android:id="@+id/m_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/m_dialog_shopping_car_rl"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginVertical="9dp"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:id="@+id/m_dialog_shopping_car_iv"
+                android:layout_width="30dp"
+                android:layout_height="@dimen/dp_30"
+                android:src="@mipmap/icon_shoppingcar_nogoods" />
+
+            <TextView
+                android:id="@+id/m_dialog_goods_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_red_circle"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/m_dialog_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/m_dialog_shopping_car_rl"
+            android:text="暂无商品"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/m_dialog_busy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/m_dialog_price_tv"
+            android:text="（忙碌时间1.5倍）"
+            android:textColor="@color/color_FF420C"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/m_dialog_delivery_fee_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@id/m_dialog_settle_tv"
+            android:text="配送费￥0"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/m_dialog_settle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/shape_gray_ebebeb_rect_16"
+            android:paddingHorizontal="17dp"
+            android:paddingVertical="9dp"
+            android:text="￥ 0起送"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

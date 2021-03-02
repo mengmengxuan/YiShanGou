@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="22dp"
+                android:text="订单已送达"
+                android:textColor="@color/color_111111"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:text="感谢您的信任，期待再次光临"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:background="@drawable/shape_white_rect_10">
+
+                <ImageView
+                    android:id="@+id/m_head_iv"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="@dimen/dp_26" />
+
+                <LinearLayout
+                    android:id="@+id/m_address_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_alignTop="@id/m_head_iv"
+                    android:layout_marginLeft="17dp"
+                    android:layout_toLeftOf="@id/m_call_phone_ll"
+                    android:layout_toRightOf="@id/m_head_iv"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/m_rider_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名"
+                        android:textColor="@color/color_111111"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/m_rider_phone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="13900001111"
+                        android:textColor="@color/color_999999"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/m_call_phone_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_alignTop="@id/m_head_iv"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_26"
+                        android:layout_height="26dp"
+                        android:src="@mipmap/icon_call_phone_blue" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m_commit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/dp_30"
+            android:layout_marginBottom="53dp"
+            android:background="@drawable/shape_orange_rect_22"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="确认送达"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

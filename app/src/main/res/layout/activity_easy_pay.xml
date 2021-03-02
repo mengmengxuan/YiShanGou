@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:id="@+id/m_no_quota_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/m_no_quota_iv"
+            android:layout_width="@dimen/dp_193"
+            android:layout_height="@dimen/dp_183"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_77" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_29"
+            android:text="暂无额度"
+            android:textColor="@color/text_third_999999"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="建议多使用一段时间"
+            android:textColor="@color/text_third_999999"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</LinearLayout>
